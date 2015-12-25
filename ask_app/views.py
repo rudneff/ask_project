@@ -4,7 +4,7 @@ from django.template import RequestContext
 
 
 def index(request):
-    return render(request, "ask_app/base.html")
+    return render(request, "ask_app/index.html")
 
 
 def registration(request):

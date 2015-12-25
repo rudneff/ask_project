@@ -1,19 +1,4 @@
-/*
-Theme Name: Ask me
-Version: 1.0
-Theme URI: www.2code.info
-Author: 2code
-Author URI: www.2code.info
-design by: 2code
-url: www.2code.info
-*/
-/* Css */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
-@import url("base.css");
-@import url("lists.css");
-@import url("bootstrap.min.css");
-@import url("prettyPhoto.css");
-@import url("font-awesome.min.css");
 body {
 	background-color: #f3f3f3;
 	color: #2f3239;
@@ -1607,7 +1592,7 @@ div[class*="slider_shadow"]:before, div[class^="header_shadow"] {
 .commentlist > li:first-child {
 	margin-top: -20px;
 }
-.comments {
+.comments { 
 	margin-top: 30px;
 }
 .comment-body {
@@ -3581,11 +3566,11 @@ span.small_arrow_dowm {
 .icons-none {
 	background: none;
 }
-h1 [class^="icons-"], h1 [class*=" icons-"],
-h2 [class^="icons-"], h2 [class*=" icons-"],
-h3 [class^="icons-"], h3 [class*=" icons-"],
-h4 [class^="icons-"], h4 [class*=" icons-"],
-h5 [class^="icons-"], h5 [class*=" icons-"],
+h1 [class^="icons-"], h1 [class*=" icons-"], 
+h2 [class^="icons-"], h2 [class*=" icons-"], 
+h3 [class^="icons-"], h3 [class*=" icons-"], 
+h4 [class^="icons-"], h4 [class*=" icons-"], 
+h5 [class^="icons-"], h5 [class*=" icons-"], 
 h6 [class^="icons-"], h6 [class*=" icons-"] {
 	margin-top: -2px;
 	margin-right: 12px;
@@ -3759,10 +3744,10 @@ h2 [class^="icons-"], h2 [class*=" icons-"] {
 }
 .accordion .accordion-title a:before {
 	content: "\f067";
-}
+}	
 .accordion .accordion-title.active a:before {
 	content: "\f068";
-}
+}	
 .accordion .accordion-title a i {
 	margin: 0 8px 0 0;
 }
@@ -3890,7 +3875,7 @@ h2 [class^="icons-"], h2 [class*=" icons-"] {
 }
 .tabs-style-2 .tab-inner-warp,.tabs-style-3 .tab-inner-warp {
 	background-color: #FAFAFA;
-    border: 1px solid #d3d3d3;
+    border: 1px solid #d3d3d3;        
     padding: 20px;
 	-webkit-box-shadow: 0px 1px 1px 0px rgba(180, 180, 180, 0.1);
 	-moz-box-shadow: 0px 1px 1px 0px rgba(180, 180, 180, 0.1);
@@ -4185,7 +4170,7 @@ h2 [class^="icons-"], h2 [class*=" icons-"] {
 	background: -o-linear-gradient(top, #f2cb11 0%,#ecb10b 100%);
 	background: -ms-linear-gradient(top, #f2cb11 0%,#ecb10b 100%);
 	background: linear-gradient(to bottom, #f2cb11 0%,#ecb10b 100%);
-
+	
 }
 .custom-button.yellow-button:hover {
 	background: -moz-linear-gradient(top, #c1920a 0%, #d1af0d 100%);
@@ -4194,7 +4179,7 @@ h2 [class^="icons-"], h2 [class*=" icons-"] {
 	background: -o-linear-gradient(top, #c1920a 0%,#d1af0d 100%);
 	background: -ms-linear-gradient(top, #c1920a 0%,#d1af0d 100%);
 	background: linear-gradient(to bottom, #c1920a 0%,#d1af0d 100%);
-
+	
 }
 /* Gray button */
 .gray-button {
@@ -4660,7 +4645,7 @@ a.carousel-next {
 	background-color: #FFF;
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
-	border-radius: 50%;
+	border-radius: 50%;    
 }
 .carousel-all.testimonial-carousel {
     margin-bottom: 0;
@@ -5098,10 +5083,10 @@ html[xmlns] .slides {
 	filter: alpha(opacity=0);
 	width: 100%;
 	height: 100%;
-	-webkit-transition: all 0s ease-in;
-	-moz-transition: all 0s ease-in;
-	-ms-transition: all 0s ease-in;
-	-o-transition: all 0s ease-in;
+	-webkit-transition: all 0s ease-in;  
+	-moz-transition: all 0s ease-in;  
+	-ms-transition: all 0s ease-in;  
+	-o-transition: all 0s ease-in;  
 	transition: all 0s ease-in;
 }
 .bxslider-overlay:before {
@@ -5116,10 +5101,10 @@ html[xmlns] .slides {
 	content: "";
 	opacity: 0.7;
 	filter: alpha(opacity=70);
-	-webkit-transition: all 0s ease-in;
-	-moz-transition: all 0s ease-in;
-	-ms-transition: all 0s ease-in;
-	-o-transition: all 0s ease-in;
+	-webkit-transition: all 0s ease-in;  
+	-moz-transition: all 0s ease-in;  
+	-ms-transition: all 0s ease-in;  
+	-o-transition: all 0s ease-in;  
 	transition: all 0s ease-in;
 }
 .grid-bxslider:hover .bxslider-overlay {
@@ -5176,10 +5161,10 @@ html[xmlns] .slides {
 	font-size: 14px;
 	background-color: #2f3239;
 	text-align: center;
-	-webkit-transition: all 0s ease-in;
-	-moz-transition: all 0s ease-in;
-	-ms-transition: all 0s ease-in;
-	-o-transition: all 0s ease-in;
+	-webkit-transition: all 0s ease-in;  
+	-moz-transition: all 0s ease-in;  
+	-ms-transition: all 0s ease-in;  
+	-o-transition: all 0s ease-in;  
 	transition: all 0s ease-in;
 }
 .bx-prev:before {
