@@ -1,0 +1,60 @@
+{% extends "ask_app/base.html" %}
+
+{% block sign_in %}
+    {% include 'ask_app/signup.html' %}
+{% endblock sign_in %}
+{% block main_content %}
+    <div class="col-md-9">
+        <div class="col-md-6">
+            <div class="page-content">
+                <h2>Login</h2>
+
+                <div class="form-style form-style-3">
+                    <form>
+                        <div class="form-inputs clearfix">
+                            <p class="login-text">
+                                <input type="text" value="Username"
+                                       onfocus="if (this.value == 'Username') {this.value = '';}"
+                                       onblur="if (this.value == '') {this.value = 'Username';}">
+                                <i class="icon-user"></i>
+                            </p>
+
+                            <p class="login-password">
+                                <input type="password" value="Password"
+                                       onfocus="if (this.value == 'Password') {this.value = '';}"
+                                       onblur="if (this.value == '') {this.value = 'Password';}">
+                                <i class="icon-lock"></i>
+                                <a href="#">Forget</a>
+                            </p>
+                        </div>
+                        <p class="form-submit login-submit">
+                            <input type="submit" value="Log in" class="button color small login-submit submit">
+                        </p>
+
+                        <div class="rememberme">
+                            <label><input type="checkbox" checked="checked"> Remember Me</label>
+                        </div>
+                    </form>
+                </div>
+            </div><!-- End page-content -->
+        </div>
+        <div class="col-md-6">
+            <div class="page-content">
+                <h2>Register Now</h2>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi adipiscing gravdio, sit amet suscipit
+                    risus ultrices eu. Fusce viverra neque at purus laoreet consequa. Vivamus vulputate posuere nisl quis
+                    consequat.</p>
+                <a class="button small color signup">Create an account</a>
+            </div><!-- End page-content -->
+        </div>
+        <div class="col-md-9">
+            {% if form.errors %}
+                <h3>Your username and password didn't match. Please try again.</h3>
+            {% else %}
+{#                <h3 class="">Whoa! Just enter your email and password! {{ main_content_title }}</h3>#}
+            {% endif %}
+        </div>
+    </div>
+
+{% endblock main_content%}

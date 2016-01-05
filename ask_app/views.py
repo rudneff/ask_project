@@ -7,8 +7,8 @@ def index(request):
     return render(request, "ask_app/index.html")
 
 
-def registration(request):
-    return render(request, "ask_app/registration.html")
+def login(request):
+    return render(request, "ask_app/login.html")
 
 
 def handle_wsgi_get_post(request):
@@ -18,3 +18,7 @@ def handle_wsgi_get_post(request):
     for key, value in request.POST.items():
         response = response + str(key) + " : " + str(value) + "<br>"
     return HttpResponse(response)
+
+
+def question(request):
+    return render(request, 'ask_app/question.html')
